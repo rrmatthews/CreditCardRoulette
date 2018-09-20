@@ -20,7 +20,35 @@
         <label for="numPeople">Total Bill Price</label>
         <input type="number" id="price" placeholder="100.00"/>
         <br>
-        <button id="submit">Submit</button>
+        <button id="submit" onclick="myFunction()">Submit</button>
+
+        <h4>Results Testing<h4>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+
+        <script>
+            function myFunction() {
+                var arr = [];
+                var numPeople = document.getElementById("numPeople").value;
+                var price = document.getElementById("price").value;
+
+                for(var i = 0; i < numPeople; i++) {
+                    var rando = getRandomInt(0, price);
+                    arr[i] = rando;
+                    price = price - rando;
+                }
+                arr[numPeople-1] += price;
+                console.log(price);
+                
+
+                document.getElementById("demo").innerHTML = arr;
+                console.log(arr);
+            }
+
+            function getRandomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+        </script>
     </section>
     
     
