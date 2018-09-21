@@ -2,31 +2,36 @@
 <head>
     <title>Credit Card Roulette</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="main.css"/>
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<!--link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 <body>
     <h1>Credit Card Roulette</h1>
-    <section>
-        <h3>What it is</h3>
-        <p>You're at dinner with the homies. It's time to pay and the server brings just one bill. Who cares about calculating how much each person actually has to pay? Why not make it random? Someone could pay 13% of the bill, someone could pay 30% of the bill. Let the fun begin!</p>
-    </section>
-    <section>
+    <section id="mainPart">
         <label for="numPeople">Number of Participants</label>
+        <br>
         <input type="number" id="numPeople" placeholder="4 People">
         <br>
+        <br>
         <label for="numPeople">Total Bill Price</label>
-        <input type="number" id="price" placeholder="100.00"/>
+        <br>
+        <input type="number" id="price" placeholder="100"/>
+        <br>
         <br>
         <button id="submit" onclick="myFunction()">Submit</button>
+    </section>
+    
 
-        <h4>Results Testing<h4>
-        <p id="demo"></p>
-        <p id="demo2"></p>
+    <section>
+        <h1>Results</h1>
+        <p id="results"></p>
+        
+        <table border="1">
+            
+        <script language="javascript" type="text/javascript">
 
-        <script>
             function myFunction() {
                 var arr = [];
                 var numPeople = document.getElementById("numPeople").value;
@@ -38,18 +43,20 @@
                     price = price - rando;
                 }
                 arr[numPeople-1] += price;
-                console.log(price);
-                
-
-                document.getElementById("demo").innerHTML = arr;
                 console.log(arr);
+                document.getElementById("results").innerHTML = arr;
             }
 
             function getRandomInt(min, max) {
                 return Math.floor(Math.random() * (max - min + 1)) + min;
             }
         </script>
+        </table>
     </section>
+
+    <footer>
+        Built by <a href="http://www.rrmatthews.com">R Matthews</a>&nbsp;|&nbsp;<a href="about.html">About</a>&nbsp;|&nbsp;<a href="support.html">Support</a>
+    </footer>
     
     
 </body>
