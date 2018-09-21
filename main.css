@@ -1,0 +1,62 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+body {
+    background: lightgray;
+}
+
+p {
+    text-align: center;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: red;
+}
+
+#mainPart {
+    text-align: center;
+}
+
+#submit {
+    background: #0066A2;
+
+    color: white;
+
+    border-style: outset;
+
+    border-color: #0066A2;
+
+    height: 50px;
+
+    width: 100px;
+
+    font: bold 15px arial, sans-serif;
+
+    text-shadow:none;
+}
+
+footer {
+    text-align: center;
+}

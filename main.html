@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Credit Card Roulette</title>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="main.css"/>
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+<body>
+    <h1>Credit Card Roulette</h1>
+    <section id="mainPart">
+        <label for="numPeople">Number of Participants</label>
+        <br>
+        <input type="number" id="numPeople" placeholder="4 People">
+        <br>
+        <br>
+        <label for="numPeople">Total Bill Price</label>
+        <br>
+        <input type="number" id="price" placeholder="100"/>
+        <br>
+        <br>
+        <button id="submit" onclick="myFunction()">Submit</button>
+    </section>
+    
+
+    <section>
+        <h1>Results</h1>
+        <p id="results"></p>
+        
+        <table border="1">
+            
+        <script language="javascript" type="text/javascript">
+
+            function myFunction() {
+                var arr = [];
+                var numPeople = document.getElementById("numPeople").value;
+                var price = document.getElementById("price").value;
+
+                for(var i = 0; i < numPeople; i++) {
+                    var rando = getRandomInt(0, price);
+                    arr[i] = rando;
+                    price = price - rando;
+                }
+                arr[numPeople-1] += price;
+                console.log(arr);
+                document.getElementById("results").innerHTML = arr;
+            }
+
+            function getRandomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+        </script>
+        </table>
+    </section>
+
+    <footer>
+        Built by <a href="http://www.rrmatthews.com">R Matthews</a>&nbsp;|&nbsp;<a href="about.html">About</a>&nbsp;|&nbsp;<a href="support.html">Support</a>
+    </footer>
+    
+    
+</body>
+</html>
