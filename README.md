@@ -1,6 +1,12 @@
 # CreditCardRoulette
-Make splitting the bill WAY more fun
+Make splitting the bill WAY more fun than it needs to be.
 <hr>
+
+## Webapp Version
+### TODO:
+- [ ] implement names
+- [ ] implement doubles for bill total
+- [ ] format the output
 
 ## Java Version
 ### Usage 
@@ -9,11 +15,5 @@ Make splitting the bill WAY more fun
   2. java CreditCardRoulette
 
 ### TODO:
-- [ ] implement adding names?
+- [ ] implement adding names
 - [ ] allow for bill as a double (currently integer support only)
-
-## Webapp Version
-### TODO:
-- [ ] everything LOL
-- [ ] implement basic frontend
-- [ ] setup backend
