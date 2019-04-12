@@ -1,5 +1,5 @@
 # CreditCardRoulette
-Make splitting the bill WAY more fun
+Make splitting the bill WAY more fun than it needs to be.
 <hr>
 
 ## Webapp Version
