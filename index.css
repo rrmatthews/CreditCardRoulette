@@ -57,6 +57,11 @@ a:active {
     text-shadow:none;
 }
 
+#results {
+    font: bold 15px arial, sans-serif;
+    font-size: 30px;
+}
+
 footer {
     text-align: center;
 }

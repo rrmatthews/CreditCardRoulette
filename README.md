@@ -2,6 +2,11 @@
 Make splitting the bill WAY more fun
 <hr>
 
+## Webapp Version
+### TODO:
+- [ ] Implementing names?
+
+
 ## Java Version
 ### Usage 
 - Run in terminal / command line 
@@ -11,9 +16,3 @@ Make splitting the bill WAY more fun
 ### TODO:
 - [ ] implement adding names?
 - [ ] allow for bill as a double (currently integer support only)
-
-## Webapp Version
-### TODO:
-- [ ] everything LOL
-- [ ] implement basic frontend
-- [ ] setup backend
